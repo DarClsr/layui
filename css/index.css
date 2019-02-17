@@ -1,0 +1,402 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+a{
+	color: inherit;
+	text-decoration: none;
+}
+ul{
+	list-style: none;
+}
+/* 关于头部 */
+body{
+	background: #f8f8f8;
+}
+header{
+	width: 100%;
+	height: 60px;
+	border-bottom: 1px solid blue;
+	position: fixed;
+	top: 0;
+	background: rgba(255,255,255,0.9);
+	z-index: 999999;
+}
+header .logo img{
+	padding-top: 0.5rem;
+	height:auto;
+	width: 100%;
+}
+header .pc-nav a{
+	line-height: 60px;
+	font-size: 12px;
+}
+header .pc-nav .active{
+	color: #0ba1e4;
+}
+header .pc-nav .nav-line{
+	width: 40%;
+	height: 1px;
+	background: #0ba1e4;
+	display: block;
+	position: absolute;
+	bottom: -3px;
+	left: -5px;
+	right: 0;
+	margin-left: auto;
+	margin-right: auto;
+	
+}
+header .my-nav
+header .my-nav .fa{
+	line-height: 30px;
+	font-size: 26px;
+}
+header .my-nav span{
+	border: 1px solid #e0e0e0;
+	padding: 5px 15px; 
+	height: 30px;
+	border-radius: 5px;
+	margin-top: 10px;
+	cursor: pointer;
+}
+
+/* 关于轮播图 */
+main .banner{
+	width: 100%;
+	overflow: hidden;
+	padding: 0;
+	position: relative;
+	margin-top: 60px;
+	height: auto;
+}
+
+main .banner .img{
+	width: 100%;
+	height: auto;
+}
+main .banner .img ul{
+	width: 200%;
+	margin: 0;
+}
+main .banner .img ul li{
+	width: 50%;
+	float: left;
+	height: 100%;
+}
+main .banner .img ul li a{
+	width: 100%;
+	height: 100%;	
+}
+main .banner .img img{
+	width: 100%;
+	display: block;
+	vertical-align: middle;
+	transform: translateX(-50%);
+	margin-left: 50%;
+}
+.my-info{
+	margin: 0;
+	padding: 0;
+	background: #fff;
+	padding: 30px 0;
+}
+section .title{
+	padding-top: 20px;
+}
+main section .title h2{
+	font-weight: 100;
+	font-size: 26px;
+}
+main section .title p{
+	height: 1px;
+  border-top:1px solid  #0ba1e4;
+ 
+	
+}
+main section .title span{
+	color: #777;
+}
+main .data{
+	margin-top: 20px;
+	padding: 0;
+	margin: 0;
+}
+main .data .data-box .data-box-top h1{
+	color:#0ba1e4;
+	font-size: 46px;
+	padding: 10px 0;
+}
+main .data .data-box   span{
+	color: #777;
+}
+/* 优势部分 */
+main .adv{
+	padding-top: 30px;
+	background: #e1e1e1;
+	padding-bottom: 30px;
+	margin: 0;
+}
+
+main .adv-box-list{
+	margin-top: 30px;
+}
+main .adv-box i{
+	font-size: 54px;
+	color:#0ba1e4;
+	padding: 15px 0;
+}
+main .adv-box .adv-inbox{
+	background: #fafafa;
+	border: 1px solid #c1c1c1;
+	padding: 10px;
+	cursor: pointer;
+
+}
+main .adv-box .adv-inbox:hover{
+	background: #0ba1e4;
+	color: white;
+}
+main .adv-box .adv-inbox:hover i{
+	color: white;
+}
+main .adv-box .adv-inbox:hover>p{
+	color: white;
+}
+main .adv-box h3{
+	font-size: 18px;
+	font-weight: 100;
+}
+main .adv-box .adv-inbox p{
+	font-size: 14px;
+	background-color:darkorchid;
+	
+}
+
+/* 优势 */
+/* 关于新闻 */
+main .new{
+	padding: 40px 0;
+	margin: 0;
+}
+main .new .new-box{
+	padding: 0;
+}
+main .new .new-box a{
+	padding: 0;
+	
+}
+
+main .new .new-box a img{
+	width: 150px;
+	
+}
+main .new .new-box-list{
+	margin: 0;
+	padding: 0;
+}
+main .new .new-box p:first-child{
+	font-size: 14px;
+	color: #0ba1e4;	
+	overflow: hidden; 
+	text-overflow:ellipsis;  
+	white-space: nowrap; 
+	margin: 0;
+}
+main .new .new-box p:nth-of-type(2){
+	font-size: 12px;
+	color: #999;
+	overflow: hidden; 
+	display: -webkit-box;
+-webkit-line-clamp: 2;
+-webkit-box-orient: vertical;
+    word-wrap: break-word;
+	text-overflow:ellipsis;  
+	margin: 0;
+	
+}
+main .new .new-box span{
+	font-size: 12px;
+	color: #999;
+}
+main .new .new-box .new-left-box{
+	padding: 0;
+	
+}
+main .client{
+	background: #e1e1e1;
+	padding: 30px 0;
+	margin: 0;
+}
+
+main .client .client-row-one .img-box{
+}
+main .client .client-row-one a{
+	margin-top: 10px;
+}
+main .client .client-row-one a img:hover{
+	border: 1px solid #0ba1e4;
+	filter: grayscale(0);
+	box-shdow:0 0 10px 0 rgba(45,183,245,.5);
+}
+main .client .client-row-one img{
+    width: 100%;
+	height: auto;
+	border: 1px solid #c1c1c1;
+	filter: grayscale(100%);
+	
+}
+main .question{
+	background: -webkit-linear-gradient(top,#0076d1,#5db8ff);
+	color: white;
+	margin: 0;
+	padding-bottom: 50px;
+}
+main .question .title{
+	z-index: 99;
+}
+main .question .title p{
+	border-top:2px solid white;	
+	margin-bottom: 4px;
+}
+main .question .title span{
+	color:white;
+	padding: 5px 0;
+}
+main .question  .question-link a{
+	border: 1px solid white;
+	padding: 8px 25px;
+	margin:10px 0 ;
+}
+
+main .client .client-row-one{
+	margin: 0;
+}
+main .client .row{
+	margin: 0;
+}
+/* 底部信息 */
+
+footer .row{
+	margin: 0;
+	color: white;
+}
+footer .ft-items{
+	background: #363636;
+	padding: 30px 0;
+}
+footer .ft-items .ft-list{
+	margin-top: 30px;
+	border-left: 1px solid white;
+}
+footer .ft-items .ft-list h3{
+	font-size: 16px;
+	padding: 10px 0;
+}
+footer .ft-items .ft-list a{
+	display: block;
+	padding: 5px 0;
+	font-size: 12px;
+}
+footer .ft-items .ft-list img{
+	width: 109px;
+}
+footer .ft-items .ft-list h3 img{
+	width: 40px;
+}
+footer .ft-items .ft-list:last-child{
+	border-right: 1px solid white;
+	padding: 0 30px;
+}
+footer .ft-items .ft-list:last-child img{
+	
+}
+footer .ft-items .ft-list:last-child h3{
+	font-size: 18px;
+	font-weight: 100;
+	word-break: break-all;
+	padding: 0;
+	margin: 0;
+}
+footer .ft-info{
+	background: #666;
+	font-size: 12px;
+	color: white;
+	padding: 20px 0;
+}
+header .my-nav .mob-btn:hover{
+		background: #ddd;
+	}
+@media screen and (min-width:1200px){
+	.container{
+		width: 940px;
+	}
+}
+@media screen and (max-width:768px){
+  .container{
+	  padding: 0;
+  }
+  .logo{
+	  padding: 0;
+  }
+  .pc-nav{
+	  padding-left: 40px;
+  }
+}
+@media screen and (max-width:576px){
+   header{
+	   height: 52px
+   }
+   .container{
+	   padding: 0 15px;
+   }
+   .logo{
+   	padding: 0 15px;
+   }
+footer .ft-items .ft-list:last-child{
+	   border-right: 0;
+   }
+}
+.ft-link{
+	width: 100%;
+	border-top:  2px solid #0ba1e4;
+	height: 50px;
+	position: fixed;
+	bottom: 0;
+	background: white;
+	left: 0;
+	padding:5px 0;
+}
+.ft-link a img{
+	width: 28px;
+}
+.ft-link a p{
+	margin: 0;
+	font-size: 14px;
+	color: #616161;	
+}
+html{
+	height: 100%;
+	box-sizing: border-box;
+}
+#canvas{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+  
+}
+main .new .new-box a .new-img-box{
+	width: auto;
+	height: auto;
+	border: 1px solid transparent;
+	border-radius:3px ;
+}
+main .new .new-box  .new-img-box:hover{
+	border-color:#0ba1e4;
+}
+
+
+
+

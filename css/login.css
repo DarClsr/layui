@@ -1,0 +1,120 @@
+@charset "utf-8";
+html {
+  height: 100%;
+}
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #f2edf3;
+  position: relative;
+}
+body .main_box {
+  width: 30%;
+  height: 60%;
+  background-color: white;
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  overflow: hidden;
+}
+body .main_box .title {
+  width: 100%;
+  height: 10%;
+  padding-top: 55px;
+  padding-left: 30px;
+}
+body .main_box .title img {
+  height: 33px;
+  line-height: inherit;
+}
+body .main_box .msg_info {
+  padding-top: 15px;
+  padding-left: 30px;
+  font-size: 18px;
+  color: #343a40;
+  width: 100%;
+}
+body .main_box .msg_info span {
+  font-size: 14px;
+}
+body .main_box .form {
+  padding-top: 5px;
+  padding-left: 30px;
+}
+body .main_box .form input {
+  width: 80%;
+  height: 40px;
+  padding: 10px;
+  margin-top: 15px;
+  border: 1px solid #ebedf2;
+  text-indent: 10px;
+  font-size: 16px;
+  outline: 0;
+  -webkit-transition: all 0.2s linear;
+  -ms-transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+body .main_box .form input:focus {
+  border: 1px solid #0ba1e4;
+}
+body .main_box .agree {
+  padding-top: 10px;
+  padding-left: 30px;
+  font-size: 12px;
+  display: block;
+}
+body .main_box .btn {
+  width: 100%;
+  padding-top: 15px;
+  padding-left: 30px;
+}
+body .main_box .btn button {
+  width: 80%;
+  height: 50px;
+  color: white;
+  outline: none;
+  background: linear-gradient(to right, #da8cff, #9a55ff);
+  cursor: pointer;
+  border: 0;
+}
+body .main_box .log_msg {
+  padding-top: 10px;
+  padding-left: 50px;
+  font-size: 14px;
+  padding-right: 50px;
+}
+body .main_box .log_msg span {
+  color: #ccc;
+  float: left;
+}
+body .main_box .log_msg a {
+  float: right;
+  color: #da8cff;
+  text-decoration: none;
+}
+body .main_box .log_msg a:hover {
+  text-decoration: underline;
+}
+body .main_box .log_info {
+  text-align: center;
+  padding-top: 15px;
+}
+body .main_box .log_info a {
+  margin: 0;
+  padding: 0;
+  color: #9a55ff ;
+  text-decoration: none;
+}
+body .main_box .log_info a:hover {
+  text-decoration: underline;
+}
+::-webkit-input-placeholder {
+  color: lightgray;
+}

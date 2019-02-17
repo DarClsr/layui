@@ -1,0 +1,133 @@
+@charset "utf-8";
+@m_0:0;
+@p_0:0;
+@m_w:100%;
+@m_h:100%;
+.pad(@value,@left){
+  padding-top: @value;
+  padding-left: @left;
+}
+.font(@value){
+  font-size: @value;
+}
+.css(@name,@value){
+  -webkit-@{name}:@value;
+  -ms-@{name}:@value;
+  -moz-@{name}:@value;
+  -o-@{name}:@value;
+  @{name}:@value;
+}
+html{
+  height: @m_h;
+}
+body{
+  margin: @m_0;
+  padding: @p_0;
+  width: @m_w;
+  height: @m_h;
+  background-color: #f2f2f2;
+  position: relative;
+  canvas{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+  .main_box{
+    width: @m_w/10*3;
+    height: @m_h/10*8;
+    background-color: white;
+    position: absolute;
+    left: @m_0;
+    top: @m_0;
+    right: @m_0;
+    bottom: @m_0;
+    margin: auto;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(255,255,255,.6);
+    .title{
+      width: @m_w;
+      height: @m_h/10;
+      .pad(55px,30px);
+       img{
+         height:33px;
+         line-height: inherit;
+       }
+    }
+    .msg_info{
+      .pad(15px,30px);
+      .font(18px);
+      color: #343a40;
+        width: @m_w;
+      span{
+        .font(14px)
+      }
+    }
+    .form{
+      .pad(5px,30px);
+      input{
+        width: @m_w/10*8;
+        height: 40px;
+        padding: 10px;
+        margin-top: 15px;
+        border: 1px solid #ebedf2;
+        text-indent: 10px;
+        .font(16px);
+        outline: 0;
+        .css(transition,all .2s linear);
+        &:focus{
+          border: 1px solid #0ba1e4;
+        }
+      }
+    }
+    .agree{
+      .pad(10px,30px);
+      .font(12px);
+      display: block;
+      line-height:20px;
+      .checkbox{
+        width: 16px;
+        height: 16px;
+        border: 2px solid #da8cff;
+        float: left;
+        .css(transition,all .8s linear);
+        .css(border-radius,3px);
+        margin: @m_0 5px;
+        text-align: center;
+        line-height: 16px;
+        color: white;
+      }
+    }
+    .btn{
+      width: @m_w;
+    .pad(15px,30px);
+      button{
+        width: @m_w/10*8;
+        height: 50px;
+        color:white;
+        outline: none;
+        background: linear-gradient(to right, #da8cff, #9a55ff);
+        cursor: pointer;
+        border: 0;
+      }
+    }
+    .bt_info{
+      .pad(30px,30px);
+      width: @m_w;
+      a{
+        margin: @m_0;
+        padding: @p_0;
+        color:#9a55ff ;
+        text-decoration: none;
+        &:hover{
+          text-decoration: underline;
+        }
+
+      }
+    }
+  }
+}
+::-webkit-input-placeholder{
+  color: lightgray;
+}
